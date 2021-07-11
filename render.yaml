@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: imgproxy
+    env: docker
+    dockerfilePath: ./docker/Dockerfile
+    envVars:
+      - key: IMGPROXY_KEY
+        sync: false
+      - key: IMGPROXY_SALT
+        sync: false
+
