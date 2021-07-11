@@ -3,6 +3,7 @@ services:
     name: imgproxy
     env: docker
     dockerfilePath: ./docker/Dockerfile
+    dockerContext: ./docker
     envVars:
       - key: IMGPROXY_KEY
         sync: false
